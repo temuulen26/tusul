@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Эрүүл мэндийн мэдээ ба зөвлөгөө</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Эрүүл мэндийн мэдээ, мэдээлэл</h1>
+
+    <section class="news-form">
+      <h2>Шинэ мэдээ оруулах</h2>
+      <form id="newsForm">
+        <input type="text" id="title" placeholder="Мэдээний гарчиг" required>
+        <textarea id="content" placeholder="Мэдээний агуулга..." required></textarea>
+        <button type="submit">Оруулах</button>
+      </form>
+    </section>
+
+    <section class="news-section">
+      <h2>Шинэ мэдээнүүд</h2>
+      <div id="newsList"></div>
+    </section>
+
+    <section class="tips-section">
+      <h2>Эрүүл мэндийн зөвлөгөө</h2>
+      <ul>
+        <li>Өдөр бүр 8-10 аяга ус уугаарай.</li>
+        <li>Эрүүл хоол хүнс хэрэглэж, жимс ногоо идээрэй.</li>
+        <li>Дасгал хөдөлгөөн тогтмол хий.</li>
+        <li>Хангалттай унтаж амар.</li>
+        <li>Стресстэхээс зайлсхийж, тайван бай.</li>
+      </ul>
+    </section>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </div>
+</body>
+</html>
